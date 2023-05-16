@@ -11,8 +11,8 @@ void main(){
 	printf("Enter the page size: \n");
 	scanf("%d",&ps);
 	for(i=0;i<np;i++){
-		sa[i]=(int)malloc(ps);
-		printf("Page%d\tAddress%u\n",i+1,sa[i]);
+		sa[i]=(int) malloc (ps);
+		printf("Page %d \tAddress%u\n",i+1,sa[i]);
 	}
 	getch();
 }

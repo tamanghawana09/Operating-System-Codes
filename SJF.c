@@ -36,7 +36,7 @@ void main(){
 				st[i]=at[i];
 			}
 			else{
-				st[i]=ft[i=1];
+				st[i]=ft[i-1];
 				wt[i]=st[i]-at[i];
 				ft[i]=st[i]+et[i];
 				ta[i]=ft[i]-at[i];

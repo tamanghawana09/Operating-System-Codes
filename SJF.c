@@ -14,7 +14,7 @@ void main(){
 	for(i=0;i<n;i++){
 		printf("Enter process name, arrival time & execution time: ");
 		//flushall();
-		scanf("%s%d%d", pn[i],&at[i],&et[i]);
+		scanf("%c%d%d", &pn[i],&at[i],&et[i]);
 	}
 	for(i=0;i<n;i++)
 	{
@@ -40,18 +40,20 @@ void main(){
 				wt[i]=st[i]-at[i];
 				ft[i]=st[i]+et[i];
 				ta[i]=ft[i]-at[i];
-				totwt+=wt[i];
-				totta+=ta[i];
+				totwt += wt[i];
+				totta += ta[i];
 			}
-			awt=(float)totwt/n;
+			awt = (float)totwt/n;
 			ata = (float)totta/n;
 			printf("\nPname\tarrivaltime\texecutiontime\twaitingtime\ttatime");
-			for(i=0;i<n;i++){
+			for(i=0;i<n;i++)
+            {
 				printf("\n%s\t%5d\t\t%5d\t\t%5d\t\t%5d",pn[i],at[i],et[i],wt[i],ta[i]);
 				printf("\nAverage waiting time is: %f",awt);
 				printf("\nAverage turn around time is : %f",ata);
-				getch();
+				
 			}
 		}
 	}
+	getch();
 }

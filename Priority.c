@@ -54,6 +54,7 @@ void main(){
 		printf("\n%s\t%5d\t\t%5d\t\t%5d\t\t%5d\t\t%5d\t\t%5d",pn[i],at[i],et[i],p[i],wt[i],ta[i]);
 		printf("\nAverage waiting time is:%f",awt);
 		printf("\nAverage turn around time is :%f",ata);
-		getch();
+		
 	}
+	getch();
 }
